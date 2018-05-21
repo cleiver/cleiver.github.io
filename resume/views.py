@@ -33,7 +33,7 @@ def contact(request):
                 '[cleiver.com] ' + contact_subject,
                 contact_name + ' escreveu:\n---\n' + contact_message,
                 'cleiver.com',
-                ['cleiver@gmail.com'],
+                ['contact@cleiver.com'],
                 headers={'Reply-To': contact_email}
             )
 
