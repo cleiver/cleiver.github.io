@@ -1,4 +1,5 @@
 from django import forms
+from nocaptcha_recaptcha import NoReCaptchaField
 
 
 class ContactForm(forms.Form):
@@ -38,4 +39,8 @@ class ContactForm(forms.Form):
             'rows': 3,
             'placeholder': 'Talk to me'
         })
+    )
+    captcha = NoReCaptchaField(
+        required=True,
+        error_messages={'required': 'Please, prove you\'re not a robot'},
     )

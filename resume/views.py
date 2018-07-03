@@ -1,7 +1,9 @@
+from urllib.parse import unquote
+
+from django.contrib import messages
+from django.core import mail
 from django.core.mail import EmailMessage
 from django.shortcuts import render, redirect
-from django.contrib import messages
-from urllib.parse import unquote
 
 from resume.forms import ContactForm
 
@@ -29,21 +31,25 @@ def contact(request):
             contact_subject = cd.get('contact_subject', '')
             contact_message = cd.get('contact_message', '')
 
-            email = EmailMessage(
-                '[cleiver.com] ' + contact_subject,
-                contact_name + ' escreveu:\n---\n' + contact_message,
-                'cleiver.com',
-                ['contact@cleiver.com'],
-                headers={'Reply-To': contact_email}
-            )
+            connection = mail.get_connection()
+            connection.open()
+            email = EmailMessage('[cleiver.com] ' + contact_subject,
+                                 contact_name + ' escreveu:\n---\n' + contact_message,
+                                 'contact@cleiver.com',
+                                 ['contact@cleiver.com'],
+                                 connection=connection,
+                                 headers={'Reply-To': contact_email}
+                                 )
 
             if email.send():
                 messages.success(request, 'Message sent! \O/ Thank you, {}!'.format(contact_name))
+
             else:
                 messages.error(request, 'Errr... something happened :( Please try again later or send me an email '
-                                        'directly to ' + unquote('%63%6C%65%69%76%65%72%40%67%6D%61%69%6C%2E%63%6F%6D'))
+                                        'directly to ' + unquote(
+                    '%63%6C%65%69%76%65%72%40%67%6D%61%69%6C%2E%63%6F%6D'))
 
-            return redirect('resume:contact-page')
+            connection.close()
 
     return render(request, 'resume/contact.html', {'form': form})
 
