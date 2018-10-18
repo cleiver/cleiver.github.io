@@ -50,7 +50,7 @@ USE_L10N = False
 
 USE_TZ = True
 
-STATIC_URL = '/public/'
+STATIC_URL = '/public'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'public'),
 ]
