@@ -1,10 +1,6 @@
-
 \.idea/
-
 cleiver/__pycache__/
-
-cleiver/settings_secrets\.py
-
 resume/__pycache__/
-
 resume/migrations/__pycache__/
+venv/
+.vscode/
