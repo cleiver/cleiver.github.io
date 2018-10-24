@@ -25,6 +25,7 @@
     <!--<link href="/vendor/devicons/css/devicons.min.css" rel="stylesheet">-->
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <!-- Custom styles for this template -->
     <link href="/css/resume.css" rel="stylesheet">
 
@@ -33,6 +34,15 @@
             content: attr(data-website) "\0040" attr(data-user);
             unicode-bidi: bidi-override;
             direction: rtl;
+        }
+
+        #about .section {
+            z-index: 1000;
+            color: #1A4B6C !important;
+        }
+        #about .section p {
+            font-size: 1rem;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
         }
     </style>
 
@@ -75,7 +85,7 @@
 <div class="container-fluid p-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
+        <div class="section my-auto">
             <h1 class="mb-0">Cleiver
                 <span class="text-primary">Carneiro</span>
             </h1>
@@ -295,6 +305,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for this template -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <script src="/js/resume.min.js"></script>
 
 </body>
