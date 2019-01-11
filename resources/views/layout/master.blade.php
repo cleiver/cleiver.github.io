@@ -106,7 +106,7 @@
                             <div class="col-sm-12 col-md-12 subpage-block">
                                 <div class="general-info">
                                     <p>I have a bachelor's degree and a specialization certificate on Systems Information. I'm a software developer with over 10 years of experience who enjoys working on those strange problems that weren't supposed to happen.</p>
-                                    <p>Having worked for the Government for the past few years, I have had the opportunity to work in several different areas, from human resources to financial management, passing through legal proceedings and now on general administrative routines. My main experience is with back end programming in PHP, but I worked with other technologies as well.</p>
+                                    <p>Having worked for the Government for the past few years, I have had the opportunity to work in several different areas, from human resources to financial management, passing through legal proceedings and now on general administrative routines. My main experience is with back-end programming in PHP, but I have some knowledge in front-end technology such as HTML5, CSS3 and JavaScript as well.</p>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                                 <div class="fun-fact-block">
                                     <i class="pe-7s-icon pe-7s-monitor"></i>
                                     <h4>Best TV Series</h4>
-                                    <span class="fun-value">LOST</span>
+                                    <span class="fun-value" data-toggle="tooltip" data-placement="bottom" title="I'm serious! =D">LOST</span>
                                 </div>
                             </div>
 
@@ -129,7 +129,7 @@
                                 <div class="fun-fact-block">
                                     <i class="pe-7s-icon pe-7s-plane"></i>
                                     <h4>Countries Visited</h4>
-                                    <span class="fun-value">7</span>
+                                    <span class="fun-value" data-toggle="tooltip" data-placement="bottom" title="Portugal, Chile, Argentina, Australia, Mexico, Peru and United States">7</span>
                                 </div>
                             </div>
 
@@ -137,7 +137,7 @@
                                 <div class="fun-fact-block">
                                     <i class="pe-7s-icon pe-7s-joy"></i>
                                     <h4>Favorite Game</h4>
-                                    <span class="fun-value">Assassin's Creed</span>
+                                    <span class="fun-value" data-toggle="tooltip" data-placement="bottom" title="Even the first one!">Assassin's Creed</span>
                                 </div>
                             </div>
 
@@ -240,6 +240,16 @@
                                     <h4>Javascript</h4>
                                     <div class="skill-container">
                                         <div class="skill-percentage" style="width: 50%;"></div>
+                                    </div>
+
+                                    <h4>C#</h4>
+                                    <div class="skill-container">
+                                        <div class="skill-percentage" style="width: 20%;"></div>
+                                    </div>
+
+                                    <h4>Java</h4>
+                                    <div class="skill-container">
+                                        <div class="skill-percentage" style="width: 10%;"></div>
                                     </div>
                                 </div>
                             </div>
