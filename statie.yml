@@ -1,0 +1,6 @@
+parameters:
+  site:
+    title: cleiver dot me
+    description: Personal website, blog and stuff
+  myself:
+    name: Cleiver C. Carneiro
