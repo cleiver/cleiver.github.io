@@ -13,4 +13,3 @@ So, I'm gonna **K**eep **I**t **S**imple **S**tupid and go back to a time when w
 ## Contact
 - [🐦 Twitter](https://twitter.com/cleiverrr)
 - [💼 LinkedIn](https://www.linkedin.com/in/cleiver/)
-- [💌 Email](mailto:talkto@cleiver.me)
